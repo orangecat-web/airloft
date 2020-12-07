@@ -1,0 +1,385 @@
+@charset "utf-8";
+button, *[onclick] {cursor: pointer}
+*[disabled] {cursor: text}
+
+h3.title {font-size: 2rem; font-weight: 500}
+h4.title {font-size: 1.5rem}
+h5.title {font-size: 1.3rem; font-weight: 500}
+
+div.banner {position: relative}
+div.bannerText {
+	position: absolute;
+	top: 8rem;
+	left: 3rem;
+}
+div.bannerText>p {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #3e3e3e;
+	margin-bottom: .5rem
+}
+div.bannerText>p>span {font-size: 1.75rem; font-weight: 400}
+div.bannerText>p:last-of-type {text-align: right; margin-top: 2rem}
+a.signNow {
+	background: #e5004f;
+	border: #9c586f 1px solid;
+	color: #fff;
+	padding: .85rem 1.5rem
+}
+a.signNow:hover {background: #9c586f; border: #e5004f 1px solid}
+
+/*search bar range slider*/
+div.rangePrive {}
+div.rangePrive span.irs-max::after,
+div.rangePrive span.js-grid-text-20::after {content: "億"}
+
+div.rangeSpace span.irs-grid-text::after {content: "坪"}
+
+
+/*subscribe*/
+dl.planItem {}
+dl.planItem>dt {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #3e3e3e;
+	margin-bottom: 1rem
+}
+dl.planItem>dd {text-align: center}
+dl.planItem>dd>p>button {
+	background: #fff;
+	border: #89dad8 1px solid;
+	padding: .5rem 1.5rem;
+}
+dl.planItem>dd>p>button[disabled] {color: #3e3e3e}
+
+dl.planItem>dd:nth-of-type(1)>p {margin-top: .75rem}
+dl.planItem>dd:nth-of-type(1)>p>a {background: #f00 !important}
+
+dl.planItem>dd:nth-of-type(2)>p:nth-of-type(1)>button,
+dl.planItem>dd:nth-of-type(3)>p:nth-of-type(1)>button {
+	background: #f00;
+	border: #c70101 1px solid;
+	color: #fff
+}
+dl.planItem>dd:nth-of-type(2)>p:nth-of-type(1)>button:hover,
+dl.planItem>dd:nth-of-type(3)>p:nth-of-type(1)>button:hover {background: #8d5e5e; border: #c70101 1px solid}
+dl.planItem>dd:nth-of-type(2)>p:nth-of-type(2)>button,
+dl.planItem>dd:nth-of-type(3)>p:nth-of-type(2)>button {
+	background: #e5004f;
+	border: #9c586f 1px solid;
+	color: #fff
+}
+dl.planItem>dd:nth-of-type(2)>p:nth-of-type(2)>button:hover,
+dl.planItem>dd:nth-of-type(3)>p:nth-of-type(2)>button:hover {background: #9c586f; border: #e5004f 1px solid}
+
+div.subscribeAd {}
+div.subscribeAd div:nth-of-type(2) p {margin-bottom: 0}
+div.subscribeAd h3 {font-size: 2rem; font-weight: 500}
+div.subscribeAd h4 {font-size: 1.5rem}
+
+div.AD01 {background: #f6b37f; color: #0f5a8e}
+div.AD02 {background: url(../upload/43145559_s.jpg) right 50% no-repeat}
+div.AD03 {background: #448aca; color: #fff}
+div.AD03 p {margin-bottom: 0}
+
+/*paycheck*/
+div.paycheckInfo {}
+div.paycheckInfo>h3 {}
+div.paycheckInfo>p:nth-of-type(3)>i {color: #13b5b1}
+
+dl.memberLog {
+	border-top: #b5b5b5 1px solid;
+	margin: 3rem 0 0;
+	padding: 3rem 0 0
+}
+dl.memberLog>dd {margin-bottom: 1.5rem}
+dl.memberLog dd label,
+dl.memberLog dd input {width: 100%}
+dl.memberLog dd button {
+	background: #13b5b1;
+	border: #999 1px solid;
+	border-left: none;
+	color: #fff;
+	padding: .2rem .75rem
+}
+dl.memberLog dd label {font-size: .9rem; font-weight: 400; margin-bottom: 0}
+dl.memberLog dd:last-of-type input {width: 65%}
+
+div.checkOut {border: #13b5b1 1px solid}
+div.checkOut button {
+	width: 100%;
+	background: #13b5b1;
+	border: #999 1px solid;
+	border-left: none;
+	color: #fff;
+	margin-top: 1.5rem;
+	padding: .5rem .75rem
+}
+
+div.checkInterests {}
+div.checkInterests i {color: #13b5b1}
+
+/*room list*/
+div.selectBox {}
+div#qaContent {position: relative; z-index: 9999}
+div#qaContent div.qa_content {
+	background: #efefef;
+	border: 1px solid #ddd;
+	position: absolute;
+	width: 100%
+}
+
+/*room detail*/
+div.roomPhoto {
+	min-height: 500px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	position: relative
+}
+div.roomPhoto div.morePic {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem
+}
+div.roomPhoto div.social {
+	position: absolute;
+	top: 1rem;
+	right: 1rem
+}
+div.roomPhoto div.social>p {display: inline-block}
+div.roomPhoto div.morePic>a, div.roomPhoto div.social>p>a {
+	background: #fff;
+	border: #999 1px solid;
+	border-radius: .25rem;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 0 3px;
+	padding: .25rem .5rem
+}
+
+div.Room {border-bottom: #ccc 1px solid; margin-bottom: 1.5rem}
+div.roomIntro {}
+div.roomIntro>h1 {
+	font-size: 3rem
+}
+div.salesInfo {text-align: center}
+div.bigHead {max-width: 6rem; max-height: 6rem}
+div.bigHead img, div.sellerImg img {border-radius: 50%}
+
+.fancybox-inner {max-width: 1140px !important}
+div.item img {
+	width: 100% !important;
+	max-width:100% !important;
+	height: auto
+}
+
+/*read more*/
+a.readMoreO, a.readMoreC {text-align: right}
+a.readMoreO::after,
+a.readMoreC::after {
+	content: "\f107";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	margin-left: .25rem
+}
+a.readMoreO::after {content: "\f107"}
+a.readMoreC::after {content: "\f106"}
+
+div.priceInfo {border: #bababa 1px solid; padding: 1rem}
+div.priceInfo>h3 {font-weight: 800; margin-bottom: .5rem}
+div.priceInfo>h3:nth-of-type(2) {font-size: 1.5rem}
+div.priceInfo>p {width: 50%; color: #666; float: left}
+div.priceInfo>p:nth-of-type(2) {text-align: right}
+div.priceInfo>button {
+	width: 100%;
+	background: #e5004f;
+	border: none;
+	color: #fff;
+	padding: .5rem
+}
+
+/*刊登人*/
+div.Poster {}
+div.Poster>p {margin-bottom: 0}
+
+/*評價*/
+div.assess {}
+div.assess>p, p.assess {display: inline-block}
+div.assess>p>i, p.assess>i {color: #368589}
+div.assess>p:nth-of-type(1)>b {font-size: 1.25rem}
+
+/*評價人*/
+div.Appraiser {border-bottom: none}
+dl.Appraiser {}
+dl.Appraiser>dd {margin-bottom: 0}
+dl.Appraiser>dd:nth-of-type(1) {font-size: 1.1rem}
+p.Message {border-bottom: #ccc 1px solid; padding-bottom: 1rem}
+div.Appraiser div.BtnSend p button {
+	background: none;
+	border: #ccc 1px solid;
+	padding: 1rem 2.5rem
+}
+div.Appraiser div.BtnSend p:nth-of-type(2) {
+	background: #e5004f;
+	border: #ae4267 1px solid;
+	color: #fff;
+	text-align: center;
+	padding: 1rem 2.5rem
+}
+div.appraise {}
+div.appraise>textarea {width: 100% !important}
+div.appraise>p {text-align: center}
+div.appraise>p>button {
+	background: #e5004f;
+	border: #ae4267 1px solid;
+	color: #fff;
+	text-align: center;
+	padding: .5rem 1.5rem
+}
+
+/*share*/
+dl.share {}
+dl.share>dd {
+	width: 32%;
+	border-bottom: #ccc 1px solid;
+	font-size: 3rem;
+	text-align: center;
+	display: inline-block;
+	padding-bottom: 1rem
+}
+i.fa-line {color: #0EBB0A}
+i.fa-facebook-square {color: #475596}
+i.fa-link {color: #e5004f}
+dl.share>dd:nth-of-type(1) {width: 100%; font-size: 1rem}
+
+/*Maps*/
+div.Map>iframe {width: 100% !important; border-bottom: none}
+
+/*QNA*/
+div.QNA {border-bottom: none}
+div.QNA>textarea {width: 100%}
+div.QNA>button {
+	background: #e5004f;
+	border: #9c586f 1px solid;
+	color: #fff;
+	padding: .5rem 1rem
+}
+
+/*sellerInfo*/
+dl.sellerInfo>dd>h3 {font-size: 2rem}
+dl.sellerHouse>dd {border-bottom: #ddd 1px solid; margin-bottom: 1.5rem; padding-bottom: 1rem}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {background: #33BAB2}
+
+ul.favorite>li {position: relative}
+ul.favorite>li>button {
+	background: none;
+	border: none;
+	font-size: 20px;
+	color: #fff;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	z-index: 9999
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+	.deskTop {display: none !important; visibility: hidden !important}
+	.Tablets {display: none !important; visibility: hidden !important}
+	.deskTopTablets {display: none !important; visibility: hidden !important}
+	/*banner*/
+	div.bannerText {position: static; padding-top: 1rem	}
+	div.bannerText>p {font-size: 1rem; margin-bottom: .15rem}
+	div.bannerText>p>span {font-size: 1.5rem}
+	dl.planItem>dd>p>button {width: 100%}
+	/*subscribe*/
+	div.AD02 div {background: rgba(255, 255, 255, 0.82); box-shadow: rgba(0, 0, 0, .25) 0 0 6px}
+	div.AD03 p {margin-bottom: 1rem}
+	/*Room*/
+	div.Room div, div.Room dl {padding-left: 0 !important; padding-right: 0 !important}
+	div.roomIntro>h1 {font-size: 2.5rem}
+	div.Appraiser div.BtnSend p {margin-bottom: 2rem}
+	div.Appraiser div.BtnSend p button, div.Appraiser dl.BtnSend p {width: 100%}
+
+	div.QNA {margin-bottom: 8rem}
+
+	div.priceInfo {background: #fff; border: none; border-top: #ccc 1px solid; padding: 0}
+	div.priceInfo>h3 {font-weight: 800; margin: .75rem 1rem}
+	div.priceInfo>button {
+		width: 100%;
+		background: #e5004f;
+		border: none;
+		color: #fff;
+		padding: .5rem
+	}
+	.SEARCH_BOX2 {float: none}
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+	.deskTop {display: none !important}
+	.Tablets {display: none !important}
+	.deskTopTablets {display: none !important}
+	/*banner*/
+	div.bannerText {top: 1rem; left: 1rem}
+	div.bannerText>p {font-size: 1rem; margin-bottom: .15rem}
+	div.bannerText>p>span {font-size: 1.5rem}
+	/*subscribe*/
+	div.AD02 div {background: rgba(255, 255, 255, 0.82); box-shadow: rgba(0, 0, 0, .25) 0 0 6px}
+
+	div.QNA {margin-bottom: 8rem}
+
+	.SEARCH_BOX2 {float: none}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.deskTop {display: none !important}
+	.Mobile {display: none !important}
+	.deskTopTablets {display: none !important}
+	/*banner*/
+	div.bannerText {top: 1.5rem; left: 1.5rem}
+	div.bannerText>p {font-size: 1.15rem; margin-bottom: .25rem}
+	div.bannerText>p>span {font-size: 1.5rem}
+	.SEARCH_BOX2 {float: none}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.Mobile {display: none !important}
+	.Tablets {display: none !important}
+	.TabletsMobile {display: none !important}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.Mobile {display: none !important}
+	.Tablets {display: none !important}
+	.TabletsMobile {display: none !important}
+}
+
+/*ios use*/
+/*iPhone 4 only Portrait or Landscape 基本上不用太理這支*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation:portrait) {
+	dl.memberLog dd:last-of-type input {width: 63%}
+}
+
+/*iPhone 5 Portrait or Landscape*/
+@media only screen and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	dl.memberLog dd:last-of-type input {width: 63%}
+}
+@media only screen and (device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : landscape) {
+}
+
+/*iPhone 6 Portrait or Landscape*/
+@media only screen and (device-width : 375px) and (orientation : portrait) {}
+@media only screen and (device-width : 667px) and (orientation : landscape) {}
+
+/*iPhone plus 6 Portrait or Landscape*/
+@media only screen and (device-width : 414px) and (orientation : portrait) {}
+@media only screen and (device-width : 736px) and (orientation : landscape) {}
+
+/*ipad*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}

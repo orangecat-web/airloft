@@ -1,0 +1,234 @@
+@charset "utf-8";
+button, *[onclick] {cursor: pointer}
+input[type="checkbox"], input[type="radio"] {width: initial !important}
+div.MEMBER {font-weight: 300}
+div.pageTitle>h1 {
+	letter-spacing: 1px;
+	font-size:20px;
+	text-align: center;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee
+}
+
+/*會員中心 page member.php*/
+dl.memberIndex {margin: 15rem auto}
+dl.memberIndex>dd {}
+dl.memberIndex>dd>a>p {border-radius: 50%; margin-bottom: 0; padding: 3rem}
+
+dl.memberIndex>dd:nth-of-type(1)>a>p {background: #f4d2df}
+dl.memberIndex>dd:nth-of-type(2)>a>p {background: #f7d0bb}
+dl.memberIndex>dd:nth-of-type(3)>a>p {background: #cae3cc}
+dl.memberIndex>dd:nth-of-type(4)>a>p {background: #cae5f2}
+dl.memberIndex>dd:nth-of-type(5)>a>p {background: #c7c0dd}
+dl.memberIndex>dd:nth-of-type(1)>a:hover>p {background: #f5a4c3}
+dl.memberIndex>dd:nth-of-type(2)>a:hover>p {background: #f4b594}
+dl.memberIndex>dd:nth-of-type(3)>a:hover>p {background: #a8e2ad}
+dl.memberIndex>dd:nth-of-type(4)>a:hover>p {background: #9cd7f4}
+dl.memberIndex>dd:nth-of-type(5)>a:hover>p {background: #b0a2db}
+
+dl.memberIndex>dd>a>p:nth-of-type(2), dl.memberIndex>dd>a:hover>p:nth-of-type(2) {
+	background: none;
+	font-size: .9rem;
+	font-weight: 300;
+	color: #666;
+	text-align: center;
+	padding: 0
+}
+
+/*我的房源 page m-house.php*/
+/*我的房源列表*/
+div.houseList {}
+div.addHouse {text-align: right}
+div.addHouse>button {border: none; color: #fff; padding: .5rem 1.25rem}
+div.addHouse>button:nth-of-type(1) {background: #f5a4c3}
+div.addHouse>button:nth-of-type(2) {background: #f4b594}
+dl.houseList {margin-top: 1rem;}
+dl.houseList>dt {
+	background: #edefed;
+	font-size: 1.25rem;
+	font-weight: 300;
+	margin-bottom: 1.5rem;
+	padding: 1rem
+}
+dl.houseList>dd.w-100 {border-bottom: #ccc 1px solid}
+dl.houseList>dd:last-of-type {text-align: right}
+dl.houseList>dd>button {
+	background: none;
+	border: none;
+	font-size: 2rem;
+	color: #000;
+}
+dl.houseList>dd>button:nth-of-type(1) {color: #7ecb26}
+dl.houseList>dd>button:nth-of-type(2) {color: #f380ab}
+dl.houseList>dd>button:nth-of-type(3) {color: #3ba7bd}
+
+/*我的房源內容*/
+div.editHouse {}
+div.houseTitle>h1.title {font-size: 2rem; font-weight: 600}
+div.houseTitle div {text-align: right}
+div.houseTitle button {
+	background: #13b5b1;
+	border: #459b99 1px solid;
+	color: #fff;
+	padding: .5rem 1rem
+}
+dd.selectRaido>p, dd.selectRaido>label {display: inline-block}
+dd.selectRaido>p {font-size: 2rem; font-weight: 400; margin-bottom: 0}
+
+div.houseInfo {border: #ddd 1px solid; text-align: center; padding: 1rem}
+div.houseInfo div {text-align: right}
+div.houseInfo button {
+	background: #13b5b1;
+	border: none;
+	border-radius: .25rem;
+	color: #fff;
+	padding: .55rem 2rem
+}
+
+dl.HouseInfo {border-bottom: #ccc 1px solid}  
+dl.HouseInfo>dt {font-size: 1.5rem; font-weight: 500; margin-bottom: 1rem;}  
+dl.HouseInfo>dd {text-align: left; margin-bottom: 1.5rem}
+
+/*form*/
+div.houseInfo .nav-pills .nav-link {
+	background: #fff;
+	border: #ccc 1px solid;
+	border-radius: 0
+}
+div.houseInfo .nav-pills .nav-link.active, .nav-pills .show>.nav-link {background: #13b5b1}
+li.sale, li.rent {
+	font-size: 1.5rem;
+	font-weight: 400;
+	padding-top: .525rem
+}
+div.houseInfo .nav-pills .Sale {border-right: none}
+div.houseInfo .nav-pills .Rent {border-left: none}
+li.sale {padding-right: .5rem}
+li.rent {padding-left: .5rem}
+
+dl.HouseInfo>dd label {width: 100%; margin-bottom: 0; padding-top: .5rem}
+dl.HouseInfo>dd input, dl.Address input {width: 100%; margin-bottom: 0; padding: 0.4705882352941176rem 0.5882352941176471rem}
+dl.HouseInfo>dd>select, dl.Address select {width: 100%; color: #666; padding: .45rem .5882352941176471rem .8rem}
+dl.HouseInfo>dd>textarea {width: 100%}
+
+dd.Room input {width: 29% !important}
+dd.Size input {width: 45% !important}
+
+
+/*新增相片*/
+dl.addPhoto {}
+dl.addPhoto>dd {margin-bottom: 2rem}
+dl.addPhoto>dd>input {padding: 0.4705882352941176rem 0.5882352941176471rem}
+dl.addPhoto>dd>button {
+	background: #fd3f41;
+	border: none;
+	border-radius: .25rem;
+	color: #fff;
+	padding: .55rem .5rem
+}
+dl.addPhoto>dd>p.img {
+	border-radius: 0;
+	margin-bottom: 0;
+	padding: .25rem
+}
+dl.addPhoto>dd:nth-of-type(1) {max-width: 100% !important; text-align: right; padding-bottom: 1.5rem}
+
+/*個人資料*/
+dl.memPic {}
+dl.memPic>dd:nth-of-type(1)>figure {background: #bebebe}
+dl.memPic>dd:nth-of-type(1)>figure>figcaption {
+	border: #ccc 1px solid;
+	border-radius: 50%;
+	overflow: hidden
+}
+dl.memPic input {width: 100%; text-align: center; padding: 1rem}
+
+/*銀行帳戶*/
+dl.Receipt {}
+dl.Receipt label, dl.Receipt input {width: 100%}
+dl.Receipt label span {font-size: .8rem}
+
+/*我的錢包*/
+/*btn*/
+a.receive {
+	background: #00bbb4;
+	border: #89dad8 1px solid;
+	color: #fff;
+	margin-left: 1rem;
+	padding: .5rem 1.5rem
+}
+a.receive:hover {
+	background: #13b5b1;
+	border: #5e8d8c 1px solid;
+	color: #fff
+}
+h3.title {padding-left: 1rem}
+div.Receive {max-width: 80%}
+div.receive {border-right: #ccc 1px solid}
+dl.receive>dt {display: inline-block}
+dl.receiveForm {}
+dl.receiveForm label, dl.receiveForm input {width: 100%}
+dl.receiveForm button {padding: .5rem 1.5rem}
+dl.receiveForm button[type="submit"] {
+	background: #00bbb4;
+	border: #7d7d7d 1px solid;
+	color: #fff
+}
+dl.receiveForm button[type="reset"] {
+	background: none;
+	border: #00bbb4 1px solid;
+	color: #333
+}
+dl.receiveForm>dd:nth-last-of-type(2) {text-align: center}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+	dl.memberIndex {margin: 1rem auto}
+	/*我的房源列表*/
+	div.addHouse {text-align: center}
+	dl.houseList>dd:nth-of-type(4n+4) {text-align: right}
+	/*我的房源內容*/
+	div.houseTitle div {text-align: center}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+	dl.memberIndex {margin: 1rem auto}
+	/*我的房源列表*/
+	div.addHouse {text-align: center}
+	dl.houseList>dd:nth-of-type(4n+4) {text-align: right}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+	/*會員中心 page member.php*/
+	dl.memberIndex>dd>a>p {padding: 2rem}
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1263px) {
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1263px) {
+}
+
+/*ios use*/
+/*iPhone 4 only Portrait or Landscape 基本上不用太理這支*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation:portrait) {}
+
+/*iPhone 5 Portrait or Landscape*/
+@media only screen (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : portrait) {}
+@media only screen (device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : landscape) {}
+
+/*iPhone 6 Portrait or Landscape*/
+@media only screen and (device-width : 375px) and (orientation : portrait) {}
+@media only screen and (device-width : 667px) and (orientation : landscape) {}
+
+/*iPhone plus 6 Portrait or Landscape*/
+@media only screen and (device-width : 414px) and (orientation : portrait) {}
+@media only screen and (device-width : 736px) and (orientation : landscape) {}
+
+/*ipad*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
